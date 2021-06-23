@@ -1,0 +1,105 @@
+.section-stats {
+
+   
+
+    .header {
+        
+        &__heading {
+        font-weight: 700;
+        color: white;
+
+        }
+
+       
+    }
+
+    .stats {
+    background-color: $card-background-color;
+    margin-top: 2rem;
+    &__details {
+       padding: 2rem;
+  
+
+    &--first {
+        font-weight: 700;
+        color: $text-color;
+        
+    }
+
+    &--image {
+       position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+    }
+
+    
+
+
+    &--number {
+            color: white;
+            font-weight: 700;
+            font-size: 2rem;
+          
+           
+           
+            
+    }   
+
+    &--difference {
+       
+        color: $color-primary-green;
+        font-weight: 700;
+        font-size: 1rem;
+       position: absolute;
+       bottom: 2.5rem;
+       right: 2.5rem;
+    }
+
+    }   
+   
+}
+
+
+}
+
+@media  screen and (max-width: 1200px) {
+    .section-stats {
+        margin-top: 5rem;
+       
+        .stats {
+        &__details {
+            &--image {
+                
+              
+            }
+
+            &--difference {
+                bottom: 2rem;
+            }
+        }
+        }
+    }
+}
+
+@media  screen and (max-width: 991px) {
+    .section-stats {
+        margin-top: 5rem;
+       
+        .stats {
+        &__details {
+            &--image {
+                
+              top: 1rem;
+            }
+
+            &--difference {
+                bottom: 2rem;
+            }
+        }
+        }
+    }
+}
+
+
+
+

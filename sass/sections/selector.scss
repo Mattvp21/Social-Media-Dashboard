@@ -1,0 +1,88 @@
+.selector {
+position: absolute;
+top: 0;
+right: 1rem;
+
+&__header {
+    display: inline-block;
+    color: $text-color;
+    font-weight: 700;
+    position: relative;
+    right: 6rem;
+    top: 2.5rem;
+    
+}
+.onoffswitch {
+    
+    width: 70px;
+    -webkit-user-select:none; 
+    -moz-user-select:none; 
+    -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 32px; padding: 0; line-height: 32px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "";
+    padding-left: 8px;
+    background-color: $text-color;
+    color: $text-color;
+    background-image: none;
+}
+.onoffswitch-inner:after {
+    content: "";
+    padding-right: 10px;
+    background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; 
+    height: 30px;
+    width: 30px; 
+    margin: 2px;
+    background: $light-toggle;
+    position: relative; 
+    top: 0; 
+    bottom: 0;
+    left: 0rem;
+    right: 35px;
+    border: 2px solid $light-toggle; border-radius: 30px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+    background-color: white;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    margin-left: 35px; 
+    background-color: white;
+}
+
+}
+
+@media  screen and (max-width: 1200px) {
+    .selector {
+       
+        &__header {
+            
+            display: none;
+            
+        }
+       
+    }
+}
