@@ -1,12 +1,17 @@
-.section-accounts .card.instagram {
-  border-top-color: #df4996; }
-
 .section-accounts .card {
   background-color: #252a41;
   border-style: solid;
   border-color: transparent;
   margin-top: 2rem;
-  border-radius: 6px; }
+  border-radius: 6px;
+  border-bottom: none; }
+  .section-accounts .card__instagram {
+    border: solid;
+    border-radius: 6px;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    border-image: linear-gradient(to top right, #fdc468, #df4996) 30; }
   .section-accounts .card__details {
     list-style: none;
     padding: 2rem;
@@ -49,7 +54,8 @@
 body {
   background-color: #1e202a;
   font-family: 'Inter', sans-serif;
-  padding: 2rem 4rem; }
+  padding: 2rem 4rem;
+  transition: ease-in 1s; }
 
 html {
   font-size: 14px; }
@@ -192,3 +198,4 @@ html {
       top: 1rem; }
     .section-stats .stats__details--difference {
       bottom: 2rem; } }
+
